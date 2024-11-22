@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stundent Marksheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1>STUNDENT MARKSHEET</h1>
+        <h1>code mit</h1>
+        <div id="info">
+            <h2>STUNDENT INFORMATION:</h2>
+            <table>
+                <tr>
+                    <th>Name :</th>
+                    <td><input type="text" value="Saad" class="details" name="fname" id="fname"></td>
+                    <th>Reg. No / Roll No: </th>
+                    <td><input type="number" class="details" name="rollno" id="rollno"></td>
+                </tr>
+                <tr>
+                    <th>Father Name :</th>
+                    <td><input value="Mujju" type="text" class="details" name="faname" id="faname"></td>
+                    <th>Date of Birth :</th>
+                    <td><input type="date" class="details" name="bod" id="bod"></td>
+                </tr>
+                <tr>
+                    <th>Institute Name :</th>
+                    <td><input type="text" value="AAC College" class="details" name="iname" id="iname"></td>
+                    <!-- <th>Batch Name :</th>
+                    <td><input type="text" name="bname" id="bname"></td> -->
+                    <th>Batch :</th>
+                    <td><input type="year" class="details" name="batch" id="batch"></td>
+                </tr>
+                <tr>
+                    <th>Exam Month-year :</th>
+                    <td><input type="text" class="details" name="ename" id="ename"></td>
+                    <th>Seat No.:</th>
+                    <td><input type="text" class="details" name="seat" id="seat"></td>
+                </tr>
+            </table>    
+
+        </div>
+        <div id="mark">
+            <h2>SUBJECTS MARKS</h2>
+            <table>
+                <tr>
+                    <th>SR. NO.</th>
+                    <th>SUBJECT NAME</th>
+                    <th>PASSING MARKS</th>
+                    <th>MARK OBTAINED</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>FRONT-END DEVELOPMENT</td>
+                    <td>100/35</td>
+                    <th><input type="number" class="details" name="fend" id="fend"></th>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>BACK-END DEVELOPMENT</td>
+                    <td>100/35</td>
+                    <th><input type="number" class="details" name="bend" id="bend"></th>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>DATA BASE</td>
+                    <td>100/35</td>
+                    <th><input type="number" class="details" name="dbase" id="dbase"></th>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>DEVOPS</td>
+                    <td>100/35</td>
+                    <th><input type="number" class="details" name="devops" id="devops"></th>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>MOBILE APP DEV</td>
+                    <td>100/35</td>
+                    <th><input type="number" class="details" name="mobile" id="mobile"></th>
+                </tr>
+            </table>
+        </div>
+        <button onclick="submit()"class="btn">SUBMIT</button>
+        <button class="btn">RESENT</button>
+    </div>
+    <div id="main1">
+        <h1>STUNDENT MARKSHEET</h1>
+        <div id="info">
+            <h2>STUNDENT INFORMATION:</h2>
+            <table>
+                <tr>
+                    <th >Name :</th>
+                    <td id="fname1" class="data"></td>
+                    <th>Reg. No / Roll No: </th>
+                    <td id="rollno1" class="data"></td>
+                </tr>
+                <tr>
+                    <th>Father Name :</th>
+                    <td id="faname1" class="data"></td>
+                    <th>Date of Birth :</th>
+                    <td id="bod1" class="data"></td>
+                </tr>
+                <tr>
+                    <th>Institute Name :</th>
+                    <td id="iname1" class="data"></td>
+                    <th>Batch :</th>
+                    <td id="batch1" class="data"></td>
+                </tr>
+                <tr>
+                    <th>Exam Month-year :</th>
+                    <td id="ename1" class="data"></td>
+                    <th>Seat No.:</th>
+                    <td id="seat1" class="data"></td>
+                </tr>
+            </table>    
+
+        </div>
+        <div id="mark">
+            <h2>SUBJECTS MARKS</h2>
+            <table>
+                <tr>
+                    <th>SR. NO.</th>
+                    <th>SUBJECT NAME</th>
+                    <th>PASSING MARKS</th>
+                    <th>MARK OBTAINED</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>FRONT-END DEVELOPMENT</td>
+                    <td>100/35</td>
+                    <th id="fend1" class="data"></th>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>BACK-END DEVELOPMENT</td>
+                    <td>100/35</td>
+                    <th id="bend1" class="data"></th>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>DATA BASE</td>
+                    <td>100/35</td>
+                    <th id="dbase1" class="data"></th>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>DEVOPS</td>
+                    <td>100/35</td>
+                    <th id="devops1" class="data"></th>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>MOBILE APP DEV</td>
+                    <td>100/35</td>
+                    <th id="mobile1" class="data"></th>
+                </tr>
+            </table>
+        </div>
+        <div id="result">
+            <h2>RESULT</h2>
+            <table>
+                <tr>
+                    <th>TOTAL :</th>
+                    <td id="total1"></td>
+                    <th>PERCENTAGE :</th>
+                    <td id="per1"></td>
+                </tr>
+                <tr>
+                    <th>GRADE :</th>
+                    <td id="grade"></td>
+                    <th>PASS/FAIL :</th>
+                    <td id="pf"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

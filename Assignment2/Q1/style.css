@@ -1,0 +1,77 @@
+
+body{
+    background-color: white;
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+}
+#main{
+    width:100%;
+     background-color:#FFFFFF;
+    border:5px solid;
+    border-style: double;
+    padding-bottom:50px;
+}
+h1{
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+#info{
+    border :2px solid rgb(182, 179, 179);
+    margin: 30px;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Cormorant SC', serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+table{
+    width: 100%;
+}
+#main table,th,td {
+    /* border: 2px solid black; */
+    text-align: left;
+}
+#mark{
+    border :2px solid rgb(182, 179, 179);
+    margin: 30px;
+    font-weight: bold;
+}
+#mark input{
+    width: 50px;
+}
+#result{
+    border :2px solid rgb(182, 179, 179);
+    margin: 30px;
+    font-weight: bold;
+}
+#result th{
+    width: 120px;
+}
+.btn{
+    text-align: center;
+    margin-left: 150px;
+    padding: 8px 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.btn:hover{
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+#main1{
+    width:99%;
+    background-color:#FFFFFF;
+    border:5px solid;
+    border-style: double;
+    padding-bottom:50px;
+}
